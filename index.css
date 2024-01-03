@@ -1,0 +1,350 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f6ee;
+}
+
+#main {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#nav {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+}
+
+#nav h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+#nav h3 span {
+  font-weight: 900;
+}
+
+#nav #links {
+  display: flex;
+  font-weight: 400;
+  gap: 2vw;
+}
+
+#links a {
+  text-decoration: none;
+  font-size: 1.2vw;
+  color: black;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  bottom: 0;
+  background-color: #EBA91F;
+}
+
+.line1 {
+  height: 6px;
+  opacity: 0;
+  left: 0;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+a:hover .line1 {
+  opacity: 0.7;
+  width: 100%;
+}
+
+#heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+  background-color: #f7f6ee;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  opacity: 0;
+  position: relative;
+}
+
+#heading h1 {
+  font-size: 3.5vw;
+}
+
+#heading h1 .dot {
+  transform: translateY(50%);
+  /* opacity: 0; */
+}
+
+#heading p {
+  font-size: 1.1vw;
+  text-align: center;
+  width: 40%;
+  margin: 20px 0px;
+}
+
+#heading button {
+  text-transform: uppercase;
+  padding: 1vw 3vw;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  /* position: fixed; */
+}
+
+#heading button:hover {
+    font-weight: bolder;
+    background-image: url("images/home-foreground.png");
+    /* color: #000; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    border: 4px solid #EABABA;
+  }
+
+#illustration {
+  position: relative;
+}
+
+#illustration img {
+  width: 100%;
+  object-fit: contain;
+}
+
+#details {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2vw;
+  padding: 10vw 6vw;
+  position: relative;
+}
+
+#details #dleft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 48%;
+  text-align: right;
+  border-right: 2px solid #000;
+  padding-right: 50px;
+}
+
+#details #dleft .sline {
+  width: 8%;
+  height: 3px;
+  background-color: #000;
+  margin: 24px 0;
+}
+
+#details #dleft p {
+  width: 40%;
+  text-align: right;
+}
+
+#details #dright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 48%;
+  text-align: left;
+}
+
+#dright .features {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+#dright .features i {
+  font-size: 50px;
+  color: rgb(46, 43, 43);
+}
+
+.features .featureDetails h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#illus2 {
+  width: 80%;
+  position: relative;
+}
+
+#illus2 img {
+  width: 80%;
+  position: absolute;
+  right: -40%;
+  top: 30%;
+  /* top: 50%; */
+}
+
+#process {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 5vw;
+}
+
+#process #processDetails {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 5vw 10vw;
+}
+
+#process #processDetails h1 {
+  font-weight: 400;
+  font-size: 60px;
+}
+
+#process #processDetails h3 {
+  font-weight: 400;
+}
+
+#process #processDetails .sline {
+  width: 8%;
+  height: 4px;
+  background-color: #000;
+  margin: 30px 0;
+}
+
+#process #processSteps {
+  /* margin-top: 50px; */
+  display: flex;
+  gap: 30px;
+  padding: 2vw;
+}
+
+#processSteps .processStep {
+  padding: 0 4vw;
+}
+
+.processStep h1 {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+.processStep h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.processStep h3 {
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.processStep .sline {
+  width: 100%;
+  height: 6px;
+  background-color: #000;
+  margin: 20px 0;
+}
+
+.processStep .mline {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  margin: 40px 0;
+}
+
+#illus3 {
+  width: 100%;
+  background-color: #EABABA;
+}
+
+#illus3 img {
+  width: 100%;
+}
+
+#footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10vw 13vw;
+  background-color: #EABABA;
+}
+
+#footer .snap {
+  width: 21vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.snap h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.snap h2 span {
+  font-weight: 900;
+}
+
+.snap p{
+    opacity: 0.5;
+}
+
+#footer .discover {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#footer .discover h2 {
+  margin-bottom: 10px;
+}
+
+#footer .discover a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 4px solid transparent;
+}
+
+#footer .discover a:hover {
+    opacity: 0.7;
+    border-bottom: 4px solid #D2E1DF;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 2s;
+    width: fit-content;
+  }
+
+#footer .contact {
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#footer .contact h2 {
+  margin-bottom: 10px;
+}
